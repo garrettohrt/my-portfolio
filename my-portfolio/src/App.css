@@ -21,11 +21,40 @@ p {
   --border-radius: 5px;
 
 
+
+
   /* COLORS */
   --light-shades: #FBFBFB;
   --main-brand: #E78536;
   --dark-accent: #C1845B;
   --dark-shades: #2D4540;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.background-animation {
+  background: linear-gradient(-45deg,
+  var(--light-shades),
+  var(--dark-shades),
+  var(--dark-accent)
+  );
+  background-size: 400% 400%;
+  animation: gradient 4s ease infinite;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100%{
+    background-position: 0% 50%;
+  }
+
 }
 
 @media screen and (max-width: 768px) {
@@ -39,6 +68,10 @@ p {
   }
 
   .navbar-links-container {
+    flex-direction: column;
+  }
+
+  .aboutme-container {
     flex-direction: column;
   }
 }
