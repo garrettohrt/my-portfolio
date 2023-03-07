@@ -1,0 +1,22 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+  margin: 0;
+}
+
+*,
+*::after,
+*::before {
+
+  box-sizing: border-box;
+}
+
+:root {
+  --light-shades: #FBFBFB;
+  --main-brand: #E78536;
+  --dark-accent: #C1845B;
+  --dark-shades: #2D4540;
+}
