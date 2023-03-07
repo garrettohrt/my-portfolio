@@ -15,8 +15,27 @@ p {
 }
 
 :root {
+  --page-padding: 1.2rem 10rem;
+  --gap: 1rem;
+
+
+  /* COLORS */
   --light-shades: #FBFBFB;
   --main-brand: #E78536;
   --dark-accent: #C1845B;
   --dark-shades: #2D4540;
+}
+
+@media screen and (max-width: 768px) {
+  :root {
+    --page-padding: 1rem 2rem;
+  }
+  .navbar-container {
+    flex-direction: column; 
+    gap: var(--gap);
+  }
+
+  .navbar-links-container {
+    flex-direction: column;
+  }
 }
