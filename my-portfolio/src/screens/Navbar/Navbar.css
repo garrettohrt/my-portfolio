@@ -12,6 +12,7 @@
 .navbar-links-container {
     display: flex;
     gap: 1rem;
+    animation: rotateMenu 0.5s ease-in-out;
 
 }
 
