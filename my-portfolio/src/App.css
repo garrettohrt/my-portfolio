@@ -30,8 +30,9 @@ p {
   :root {
     --page-padding: 1rem 2rem;
   }
+
   .navbar-container {
-    flex-direction: column; 
+    flex-direction: column;
     gap: var(--gap);
   }
 
